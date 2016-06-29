@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA39D61C-38AC-4EF1-97C2-007099EDAE7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharePoint2013_Bootstrap3</RootNamespace>
+    <AssemblyName>SharePoint2013 Bootstrap3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FeatureElements\MasterPages\seattle_bootstrap.master" />
+    <None Include="FeatureElements\MasterPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3ab39293-076c-45fd-bee3-466379be74e2}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\MasterPage Feature\MasterPage Feature.feature">
+      <FeatureId>{6a1078d2-2fdd-4cc6-8d56-d776611627bd}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap-theme.css.map" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap-theme.min.css.map" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap.css.map" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap.min.css.map" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\jQuery.2.2.2\Content\Scripts\jquery-2.2.2.min.map" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a37dcf8e-5f75-4c7c-a9d0-3f636e53af8d}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Package\Package.package">
+      <PackageId>{3be915dc-a6b4-448c-978e-fca000c90e21}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="FeatureElements\MasterPages\Elements.xml" />
+    <Content Include="Features\MasterPage Feature\MasterPage Feature.Template.xml">
+      <DependentUpon>MasterPage Feature.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap-theme.css" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap-theme.min.css" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap.css" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap.min.css" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Scripts\bootstrap.js" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Scripts\bootstrap.min.js" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap3_sharepoint.css" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\jQuery.2.2.2\Content\Scripts\jquery-2.2.2-vsdoc.js" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\jQuery.2.2.2\Content\Scripts\jquery-2.2.2.js" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\jQuery.2.2.2\Content\Scripts\jquery-2.2.2.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

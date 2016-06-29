@@ -1,0 +1,108 @@
+﻿/*bootstrap resets for SharePoint*/
+*, *:before, *:after {
+	-moz-box-sizing: content-box; /*border-box causes many issues with SP*/
+}
+
+* [class^="span"], * [class^="span"]:before, * [class^="span"]:after {
+	-moz-box-sizing: border-box;
+}
+
+img {
+	max-width: none;
+	width: auto;
+}
+
+* [class^="span"] img {
+	max-width: 100%; /*for images inside span grid*/
+}
+
+#scriptWPQ2 img, img.ms-webpart-menuArrowImg, #applist img {
+	width: auto; /*within a span may still need to have width of image not 100% for SP2013 OOTB features/imges*/
+	max-width: none;
+}
+
+.ms-siteactions-imgspan {
+	float: none;
+	margin: 0px;
+}
+
+#s4-ribbonrow [class*="span"] {
+    float: none;
+    margin-left: 0px;
+    line-height: 1.2em;
+}
+
+input.ms-cui-cb-input {
+	height: 14px;
+    padding: 3px 7px 2px;
+}
+
+select, input[type="file"] {
+    height: auto;
+    line-height: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+/*end bootstrap resets*/
+
+
+/*Bootstrap Fix*/
+
+*, *:before, *:after {
+-webkit-box-sizing: content-box; /*border-box causes many issues with SP*/
+-moz-box-sizing: content-box; /*border-box causes many issues with SP*/
+box-sizing: content-box; /*border-box causes many issues with SP*/
+}
+* [class^='span'], * [class^='span']:before, * [class^='span']:after {
+-webkit-box-sizing: border-box; /*re-enable border-box for framework spans*/
+-moz-box-sizing: border-box; /*re-enable border-box for framework spans*/
+box-sizing: border-box; /*re-enable border-box for framework spans*/
+}
+img {
+max-width: none;
+width: auto;
+}
+* [class^='span'] img {
+max-width: 100%; /*for images inside span grid*/
+}
+#scriptWPQ2 img, img.ms-webpart-menuArrowImg, #applist img {
+/*within a span may still need to have width of image not 100% for SP2013 OOTB features/imges*/
+width: auto;
+max-width: none;
+}
+.ms-siteactions-imgspan {
+float: none;
+margin: 0px;
+}
+/*Bootstrap Fix*/
+
+.container *, *:before, *:after {
+-webkit-box-sizing: border-box; /*border-box causes many issues with SP*/
+-moz-box-sizing: border-box; /*border-box causes many issues with SP*/
+box-sizing: border-box; /*border-box causes many issues with SP*/
+}
+/**/
+
+a.ms-cui-tt-a:hover, a.ms-cui-tt-a:focus, a.ms-cui-ctl-a2:hover, 
+a.ms-cui-disabled:hover, a.ms-cui-ctl-large:hover, a.ms-core-menu-link {
+text-decoration: none    
+}
+
+
+
+div.main {
+    width: 100% !important;
+    height: 100%;
+    background-color: #0071C6; 
+    position: absolute;
+    z-index: 100;
+    display:none 
+}
+
+h2, h3, .ms-h2, .ms-h3, .ms-headerFont {
+         font-weight: 300;
+    font-size: inherit;
+}
