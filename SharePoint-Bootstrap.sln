@@ -3,7 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePoint2013-Bootstrap3", "SharePoint2013-Bootstrap3\SharePoint2013-Bootstrap3.csproj", "{AA39D61C-38AC-4EF1-97C2-007099EDAE7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution materials", "Solution materials", "{67F8487F-248B-4C1F-905F-326B16BBEAA4}"
+	ProjectSection(SolutionItems) = preProject
+		Solution materials\set_masterpage.ps1 = Solution materials\set_masterpage.ps1
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA39D61C-38AC-4EF1-97C2-007099EDAE7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA39D61C-38AC-4EF1-97C2-007099EDAE7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA39D61C-38AC-4EF1-97C2-007099EDAE7A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AA39D61C-38AC-4EF1-97C2-007099EDAE7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA39D61C-38AC-4EF1-97C2-007099EDAE7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA39D61C-38AC-4EF1-97C2-007099EDAE7A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
