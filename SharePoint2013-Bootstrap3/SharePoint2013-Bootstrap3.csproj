@@ -64,7 +64,6 @@
     <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.ttf" />
     <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="Layouts\SharePoint2013-Bootstrap3\jQuery.2.2.2\Content\Scripts\jquery-2.2.2.min.map" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a37dcf8e-5f75-4c7c-a9d0-3f636e53af8d}</SharePointProjectItemId>
     </None>
@@ -90,9 +89,6 @@
     <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Scripts\bootstrap.js" />
     <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Scripts\bootstrap.min.js" />
     <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap3_sharepoint.css" />
-    <Content Include="Layouts\SharePoint2013-Bootstrap3\jQuery.2.2.2\Content\Scripts\jquery-2.2.2-vsdoc.js" />
-    <Content Include="Layouts\SharePoint2013-Bootstrap3\jQuery.2.2.2\Content\Scripts\jquery-2.2.2.js" />
-    <Content Include="Layouts\SharePoint2013-Bootstrap3\jQuery.2.2.2\Content\Scripts\jquery-2.2.2.min.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

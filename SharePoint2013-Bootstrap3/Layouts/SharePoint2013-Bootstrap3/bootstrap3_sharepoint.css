@@ -106,3 +106,7 @@ h2, h3, .ms-h2, .ms-h3, .ms-headerFont {
          font-weight: 300;
     font-size: inherit;
 }
+
+body {
+    font-family: "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
+}
