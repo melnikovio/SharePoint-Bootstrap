@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="83672ca3-3557-4123-9143-7a44212f5186" solutionId="83672ca3-3557-4123-9143-7a44212f5186" resetWebServer="false" sharePointProductVersion="15.0" name="SharePoint_Win8_StartMenu" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="d10f4761-98a1-4759-aab2-6df05abe09a2" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="dce54a0f-0570-4f58-ad1e-11a2af969e2e" />
+  </projectItems>
+</package>

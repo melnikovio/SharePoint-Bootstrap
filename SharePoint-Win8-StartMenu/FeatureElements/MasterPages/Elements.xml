@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MasterPages" Path="MasterPages" RootWebOnly="TRUE" Url="_catalogs/masterpage">
+    <File Url="seattle-win8-startmenu.master" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE"/>
+  </Module>
+</Elements>

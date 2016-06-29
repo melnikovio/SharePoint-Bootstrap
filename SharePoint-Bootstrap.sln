@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution materials", "Solut
 		Solution materials\set_masterpage.ps1 = Solution materials\set_masterpage.ps1
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePoint-Win8-StartMenu", "SharePoint-Win8-StartMenu\SharePoint-Win8-StartMenu.csproj", "{81459059-D115-411D-AB44-4422F6D64B15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,12 @@ Global
 		{AA39D61C-38AC-4EF1-97C2-007099EDAE7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA39D61C-38AC-4EF1-97C2-007099EDAE7A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AA39D61C-38AC-4EF1-97C2-007099EDAE7A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{81459059-D115-411D-AB44-4422F6D64B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81459059-D115-411D-AB44-4422F6D64B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81459059-D115-411D-AB44-4422F6D64B15}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{81459059-D115-411D-AB44-4422F6D64B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81459059-D115-411D-AB44-4422F6D64B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81459059-D115-411D-AB44-4422F6D64B15}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

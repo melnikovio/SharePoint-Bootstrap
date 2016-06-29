@@ -1,0 +1,383 @@
+/*bootstrap resets for SharePoint*/
+*, *:before, *:after {
+	-moz-box-sizing: content-box; /*border-box causes many issues with SP*/
+}
+
+* [class^="span"], * [class^="span"]:before, * [class^="span"]:after {
+	-moz-box-sizing: border-box;
+}
+
+img {
+	max-width: none;
+	width: auto;
+}
+
+* [class^="span"] img {
+	max-width: 100%; /*for images inside span grid*/
+}
+
+#scriptWPQ2 img, img.ms-webpart-menuArrowImg, #applist img {
+	width: auto; /*within a span may still need to have width of image not 100% for SP2013 OOTB features/imges*/
+	max-width: none;
+}
+
+.ms-siteactions-imgspan {
+	float: none;
+	margin: 0px;
+}
+
+#s4-ribbonrow [class*="span"] {
+    float: none;
+    margin-left: 0px;
+    line-height: 1.2em;
+}
+
+input.ms-cui-cb-input {
+	height: 14px;
+    padding: 3px 7px 2px;
+}
+
+select, input[type="file"] {
+    height: auto;
+    line-height: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+/*end bootstrap resets*/
+
+
+/*Bootstrap Fix*/
+
+*, *:before, *:after {
+-webkit-box-sizing: content-box; /*border-box causes many issues with SP*/
+-moz-box-sizing: content-box; /*border-box causes many issues with SP*/
+box-sizing: content-box; /*border-box causes many issues with SP*/
+}
+* [class^='span'], * [class^='span']:before, * [class^='span']:after {
+-webkit-box-sizing: border-box; /*re-enable border-box for framework spans*/
+-moz-box-sizing: border-box; /*re-enable border-box for framework spans*/
+box-sizing: border-box; /*re-enable border-box for framework spans*/
+}
+img {
+max-width: none;
+width: auto;
+}
+* [class^='span'] img {
+max-width: 100%; /*for images inside span grid*/
+}
+#scriptWPQ2 img, img.ms-webpart-menuArrowImg, #applist img {
+/*within a span may still need to have width of image not 100% for SP2013 OOTB features/imges*/
+width: auto;
+max-width: none;
+}
+.ms-siteactions-imgspan {
+float: none;
+margin: 0px;
+}
+/*Bootstrap Fix*/
+
+.container *, *:before, *:after {
+-webkit-box-sizing: border-box; /*border-box causes many issues with SP*/
+-moz-box-sizing: border-box; /*border-box causes many issues with SP*/
+box-sizing: border-box; /*border-box causes many issues with SP*/
+}
+/**/
+
+a.ms-cui-tt-a:hover, a.ms-cui-tt-a:focus, a.ms-cui-ctl-a2:hover, 
+a.ms-cui-disabled:hover, a.ms-cui-ctl-large:hover, a.ms-core-menu-link {
+text-decoration: none    
+}
+
+
+
+div.main {
+    width: 100% !important;
+    height: 100%;
+    background-color: #0071C6; 
+    position: absolute;
+    z-index: 100;
+    display:none 
+}
+
+h2, h3, .ms-h2, .ms-h3, .ms-headerFont {
+         font-weight: 300;
+    font-size: inherit;
+}
+
+
+.container {
+    /*width: 80% !important;*/
+    margin:0 auto !important;
+}
+
+.webpart {
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    /*border: 4px solid #714581; */
+
+    margin:0 auto;
+    width: 100% !important;
+
+}
+
+.widget {
+    padding: 5px 0px 0px 10px !important;
+    color: #ffffff;
+    min-height: 90px !important;
+    min-width: 90px !important;
+}
+.widget a {
+    font-size: 12pt;
+    color: #ffffff !important;
+}
+
+.widget p {
+    color: #ffffff !important;
+}
+
+.widget.structure {
+    background-color: #d5524a !important;
+    background: url("../images/structure.png") no-repeat;
+    background-position: top 25px left 5px;
+}
+
+.widget.blogs {
+    background-color: #92a840 !important;
+}
+
+.widget.reportslist {
+    background-color: #92a840 !important;
+}
+
+.widget.listitems {
+    background-color: #92a840 !important;
+}
+
+.widget.hooray {
+    background-color: #477aa0 !important;
+}
+
+.widget.exchangelist {
+    background-color: #477aa0 !important;
+}
+
+.widget.myprofile {
+    padding: 0px 0px 0px 0px !important;
+    background-color: #92a840 !important;
+    background: url("../images/myprofile.png") no-repeat center;
+    background-position: top 0px;
+    background-size: 80px;
+}
+
+ .widget.interview {
+    background-color: #477aa0 !important;
+}
+
+.widget.officemap {
+    background-color: #6f2162 !important;
+    background: url("../images/officemap.png") no-repeat center;
+}
+
+.widget.exchangebutton {
+    background-color: #6f2162 !important;
+    background: url("../images/exchangebutton.png") no-repeat center;
+    background-size: 90px;
+}
+
+.widget.photos {
+    background-color: #6d6d6d !important;
+}
+
+.widget.events {
+    background-color: #92a840 !important;
+    background: url("../images/clouds2.png") no-repeat;
+    background-size: 90px 100%;
+}
+
+.widget.chat {
+    background-color: #477aa0 !important;
+}
+
+.widget.newemployees {
+    background-color: #d5524a !important;
+}
+
+.widget.birthdays {
+    background-color: #477aa0 !important;
+}
+
+.widget.ideas {
+    background-color: #92a840 !important;
+}
+
+.widget.note {
+    background-color: #477aa0 !important;
+}
+
+.widget.facebook {
+    background-color: #6f2162 !important;
+}
+
+.widget.job {
+    background-color: #714581 !important;
+}
+
+.widget.neighbors {
+    background-color: #714581 !important;
+}
+
+.widget.portal {
+    background-color: #714581 !important;
+}
+
+.widget.services {
+    background-color: #714581 !important;
+}
+
+
+/*slider*/
+.captionOrange, .captionBlack
+{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.captionOrange
+{
+    background: #EB5100;
+    background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack
+{
+    font-size:16px;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+a.captionOrange:hover
+{
+    color: #eb5100;
+    text-decoration: underline;
+    background-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.7);
+}
+.bricon
+{
+    background: url(../images/img/browser-icons.png);
+}
+
+/* jssor slider arrow navigator skin 02 css */
+/*
+.jssora02l              (normal)
+.jssora02r              (normal)
+.jssora02l:hover        (normal mouseover)
+.jssora02r:hover        (normal mouseover)
+.jssora02ldn            (mousedown)
+.jssora02rdn            (mousedown)
+*/
+.jssora02l, .jssora02r, .jssora02ldn, .jssora02rdn
+{
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    background: url(../images/img/a02.png) no-repeat;
+    overflow:hidden;
+}
+.jssora02l { background-position: -3px -33px; }
+.jssora02r { background-position: -63px -33px; }
+.jssora02l:hover { background-position: -123px -33px; }
+.jssora02r:hover { background-position: -183px -33px; }
+.jssora02ldn { background-position: -243px -33px; }
+.jssora02rdn { background-position: -303px -33px; }
+
+/* jssor slider thumbnail navigator skin 03 css */
+/*
+.jssort03 .p            (normal)
+.jssort03 .p:hover      (normal mouseover)
+.jssort03 .pav          (active)
+.jssort03 .pav:hover    (active mouseover)
+.jssort03 .pdn          (mousedown)
+*/
+.jssort03 .w, .jssort03 .pav:hover .w
+{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    border: white 1px dashed;
+}
+* html .jssort03 .w
+{
+    width /**/: 62px;
+    height /**/: 32px;
+}
+.jssort03 .pdn .w, .jssort03 .pav .w { border-style: solid; }
+.jssort03 .c
+{
+    width: 62px;
+    height: 32px;
+    filter:  alpha(opacity=45);
+    opacity: .45;
+
+    transition: opacity .6s;
+    -moz-transition: opacity .6s;
+    -webkit-transition: opacity .6s;
+    -o-transition: opacity .6s;
+}
+.jssort03 .p:hover .c, .jssort03 .pav .c
+{
+    filter:  alpha(opacity=0);
+    opacity: 0;
+}
+.jssort03 .p:hover .c
+{
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+}
+/*slider*/
+
+
+table.items {
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    /*height: 100%;*/
+}
+
+table.items td {
+    font-size: 9pt;
+    padding-bottom: 6px;
+    vertical-align: top;
+}
+
+table.items td > a {
+    font-size: 9pt;
+    /*text-decoration: underline;*/ 
+}
+
+table.items th {
+    font-size: 10pt;
+}
+
+div.description {
+    padding-bottom: 11px;
+}
+
+div.description > a {
+    font-size: 12pt;
+    
+}
+
+td.message {
+    width: 40%;
+}

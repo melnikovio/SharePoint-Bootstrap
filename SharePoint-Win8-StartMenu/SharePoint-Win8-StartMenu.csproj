@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81459059-D115-411D-AB44-4422F6D64B15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharePoint_Win8_StartMenu</RootNamespace>
+    <AssemblyName>SharePoint-Win8-StartMenu</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FeatureElements\MasterPages\seattle-win8-startmenu.master" />
+    <None Include="FeatureElements\MasterPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5892b70a-8503-4092-84df-29fd5a1ade09}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Win8-StartMenu-Feature\Win8-StartMenu-Feature.feature">
+      <FeatureId>{d10f4761-98a1-4759-aab2-6df05abe09a2}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\css\bootstrap.css.map" />
+    <None Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dce54a0f-0570-4f58-ad1e-11a2af969e2e}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{83672ca3-3557-4123-9143-7a44212f5186}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="FeatureElements\MasterPages\Elements.xml" />
+    <Content Include="Features\Win8-StartMenu-Feature\Win8-StartMenu-Feature.Template.xml">
+      <DependentUpon>Win8-StartMenu-Feature.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\blogs_1.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\blogs_2.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\blogs_3.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\clouds2.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\exchangebutton.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\hooray.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\1920\blue.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\1920\purple.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\1920\red.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a01.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a02.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a03.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a04.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a06.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a07.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a08.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a09.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a10.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a11.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a12.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a13.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a14.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a15.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a16.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a17.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a18.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a19.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a20.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\a21.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\01.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\02.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\03.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\04.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\05.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\06.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\07.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\08.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\09.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\10.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\11.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\12.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\13.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\14.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\15.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\16.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\17.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\18.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\19.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\20.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\21.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\22.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\23.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\24.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\25.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\26.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\27.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\28.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\29.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\30.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-01.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-02.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-03.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-04.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-05.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-06.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-07.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-08.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-09.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-10.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-11.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-12.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-13.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-14.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-15.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-16.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-17.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-18.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-19.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-20.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-21.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-22.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-23.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-24.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-25.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-26.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-27.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-28.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-29.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\alila\thumb-30.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\005.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\006.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\011.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\013.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\014.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\019.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\020.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\021.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\022.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\024.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\025.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\027.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\029.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\030.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\031.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\032.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\034.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\038.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\039.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\043.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\044.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\047.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\ancient-lady\050.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\appicon\01.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\appicon\02.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\appicon\03.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b02.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b03.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b05.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b06.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b07.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b10.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b11.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b12.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b13.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b14.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b16.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b17.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b18.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b20.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\b21.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\back.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\browser-icons.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\close.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\home\01.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\home\02.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\home\03.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\home\04.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\home\back-dice-02.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\home\back-dice.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\home\moc-ipad.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\home\moc-iphone.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\Icon-Slider-12-jQuery.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\Icon-Slider-12-No-jQuery.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\01.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\02.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\03.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\04.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\05.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\06.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\07.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\08.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\09.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\10.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\11.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\12.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-01.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-02.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-03.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-04.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-05.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-06.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-07.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-08.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-09.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-10.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-11.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\landscape\thumb-12.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\loading.gif" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\loading2.gif" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\amazon.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\android.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\bitly.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\blogger.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\dnn.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\drupal.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\ebay.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\facebook.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\google.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\ibm.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\ios.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\joomla.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\jssor.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\linkedin.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\mac.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\magento.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\pinterest.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\samsung.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\twitter.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\windows.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\wordpress.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\logo\youtube.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\find-out-more-bt.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\main_bg.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\main_bg.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s1.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s1t.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s2.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s2t.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s3.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s3t.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s4.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s4t.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s5.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s5t.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s6.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s6t.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s7.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s7t.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s8.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\major\s8t.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\001.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\002.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\003.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\004.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\005.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\006.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\007.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\008.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\thumb-001.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\thumb-002.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\thumb-003.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\thumb-004.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\thumb-005.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\thumb-006.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\thumb-007.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\motor\thumb-008.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\nested-thumb\landscape.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\nested-thumb\motor.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\nested-thumb\photography.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\c-finger-pointing.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\c-fruit.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\c-jssor-slider.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\c-navigator-horizontal.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\c-navigator.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\c-phone-horizontal.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\c-phone.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\c-slide-1.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\c-slide-2.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\c-slide-3.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\c-text.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\new-site\cool-guy.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\paint\01.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\paint\02.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\paint\03.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\paint\04.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\paint\05.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\paint\06.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\paint\07.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\paint\08.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\paint\09.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\paint\10.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\paint\11.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\001.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\002.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\003.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\004.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\005.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\006.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\007.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\008.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\009.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\010.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\011.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\012.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\013.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\014.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\015.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-001.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-002.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-003.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-004.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-005.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-006.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-007.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-008.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-009.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-010.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-011.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-012.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-013.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-014.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\photography\thumb-015.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\play.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\qr\full-width-slider.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\qr\jssor.com.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\share\share-icons.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\t01.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\01.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\02.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\03.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\04.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\05.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\06.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\07.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\08.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\09.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\10.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\11.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\12.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\13.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\14.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\15.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\16.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\17.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\18.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\19.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-01.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-02.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-03.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-04.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-05.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-06.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-07.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-08.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-09.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-10.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-11.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-12.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-13.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-14.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-15.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-16.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-17.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-18.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\img\travel\thumb-19.jpg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\myprofile.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\myprofile_old.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\officemap.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\structure.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\images\Windows_logo_-_2012.svg.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\ai.0.15.0-build58334.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\EmptyWidget.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\bootstrap-custom.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\bootstrap.min.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\bootstrap\js\npm.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\jqueryui\jquery-ui.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\jquery\jquery-1.11.1.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\jquery\metro\metro-bootstrap.min.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\jquery\metro\metro.min.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\jssor\jssor.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\jssor\jssor.slider.min.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\require\require_2.1.15.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\sp\sp_helper.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\widgets\wg_all.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\widgets\wg_exchangelist.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\widgets\wg_helper.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\widgets\wg_listitems.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\widgets\wg_photos.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\widgets\wg_reportslist.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\lib\widgets\wg_structure.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\main.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\onload.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\require_wg.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\testshow.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\styles\sharepoint2013-bootstrap3-reset.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\styles\widgets.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
