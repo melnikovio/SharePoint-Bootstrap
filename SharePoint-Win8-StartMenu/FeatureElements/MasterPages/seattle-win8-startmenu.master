@@ -29,37 +29,10 @@
 	<SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false" />
     
     
-
-   <%-- <script type="text/javascript" data-main="/_Layouts/15/SPMainApp/scripts/main" src="/_Layouts/15/SPMainApp/scripts/lib/require/require_2.1.15.js"></script>--%>
-    <SharePoint:ScriptLink ID="ScriptLink90" Language="javascript" Name="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/jquery/jquery-1.11.1.js" Defer="true" runat="server" />
-    <SharePoint:ScriptLink ID="ScriptLink100" Language="javascript" Name="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/main.js" Defer="true" runat="server" />
-    <%--<script src="/_Layouts/15/SPMainApp/scripts/lib/jquery/jquery-1.11.1.js"></script>--%>
-    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/jqueryui/jquery-ui.js"></script>
-    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/jquery/metro/metro.min.js"></script>
-    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/widgets/wg_helper.js"></script>
-    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/widgets/wg_listitems.js"></script>
-    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/widgets/wg_exchangelist.js"></script>
-    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/widgets/wg_photos.js"></script>
-    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/widgets/wg_reportslist.js"></script>
-    <%--<script src="/_Layouts/15/SPMainApp/scripts/main.js"></script>--%>
-    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/testshow.js"></script>
-    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/sp/sp_helper.js"></script>
-
-    <link href="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/lib/jquery/metro/metro-bootstrap.min.css" rel="stylesheet" />
-    <link href="/_Layouts/15/SharePoint-Win8-StartMenu/styles/widgets.css" rel="stylesheet" />
-    <%--<link href="/_Layouts/15/SPMainApp/styles/sharepoint2013-bootstrap3-reset.css" rel="stylesheet" />--%>
-    
-    <%-- Signalr --%>
-    <script src="/_Layouts/15/SPSignalrApp/Scripts/jquery.signalR-2.2.0.js"></script>
-    <script src="/_Layouts/15/SPSignalrApp/Scripts/toastr.min.js"></script>
-
-    <link href="/_Layouts/15/SPSignalrApp/toastr.min.css" rel="stylesheet" />
-
-    <script src="/_Layouts/15/SPSignalrApp/SignalR.Chat.js"></script>
-
-    <script src="/signalr/hubs"></script>
+     <%--bootstrap--%>
+    <link href="/_Layouts/15/SharePoint-Win8-StartMenu/libs/bootstrap.3.3.6/content/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/_Layouts/15/SharePoint-Win8-StartMenu/styles/bootstrap3_sharepoint.css" rel="stylesheet" />
+    <%--bootstrap--%>
     
 
 	<SharePoint:CustomJSUrl runat="server" />

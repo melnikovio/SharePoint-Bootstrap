@@ -56,14 +56,14 @@
       <FeatureId>{6a1078d2-2fdd-4cc6-8d56-d776611627bd}</FeatureId>
     </None>
     <None Include="key.snk" />
-    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap-theme.css.map" />
-    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap-theme.min.css.map" />
-    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap.css.map" />
-    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap.min.css.map" />
-    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.eot" />
-    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.woff" />
-    <None Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\Content\bootstrap-theme.css.map" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\Content\bootstrap-theme.min.css.map" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\Content\bootstrap.css.map" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\Content\bootstrap.min.css.map" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a37dcf8e-5f75-4c7c-a9d0-3f636e53af8d}</SharePointProjectItemId>
     </None>
@@ -81,14 +81,14 @@
     <Content Include="Features\MasterPage Feature\MasterPage Feature.Template.xml">
       <DependentUpon>MasterPage Feature.feature</DependentUpon>
     </Content>
-    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap-theme.css" />
-    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap-theme.min.css" />
-    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap.css" />
-    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Content\bootstrap.min.css" />
-    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Scripts\bootstrap.js" />
-    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap.3.3.6\content\Scripts\bootstrap.min.js" />
-    <Content Include="Layouts\SharePoint2013-Bootstrap3\bootstrap3_sharepoint.css" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\Content\bootstrap-theme.css" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\Content\bootstrap-theme.min.css" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\Content\bootstrap.css" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\Content\bootstrap.min.css" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\Scripts\bootstrap.js" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\libs\bootstrap.3.3.6\content\Scripts\bootstrap.min.js" />
+    <Content Include="Layouts\SharePoint2013-Bootstrap3\styles\bootstrap3_sharepoint.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

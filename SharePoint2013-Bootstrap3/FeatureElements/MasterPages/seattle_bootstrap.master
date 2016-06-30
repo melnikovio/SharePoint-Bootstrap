@@ -36,8 +36,8 @@
 	<SharePoint:CssRegistration Name="Themable/corev15.css" runat="server" />
     
     <%--bootstrap--%>
-    <link href="/_Layouts/15/SharePoint2013-Bootstrap3/bootstrap.3.3.6/content/Content/bootstrap.css" rel="stylesheet" />
-    <link href="/_Layouts/15/SharePoint2013-Bootstrap3/bootstrap3_sharepoint.css" rel="stylesheet" />
+    <link href="/_Layouts/15/SharePoint2013-Bootstrap3/libs/bootstrap.3.3.6/content/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/_Layouts/15/SharePoint2013-Bootstrap3/styles/bootstrap3_sharepoint.css" rel="stylesheet" />
     <%--bootstrap--%>
     
 </head>

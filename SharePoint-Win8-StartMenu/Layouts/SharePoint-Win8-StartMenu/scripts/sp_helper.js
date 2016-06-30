@@ -33,5 +33,5 @@ SpLittleHelper.prototype.onQuerySucceededLoadListItems = function () {
 
 //отработка ошибки загрузки
 SpLittleHelper.prototype.onQueryFailed = function (sender, args) {
-    console.log('Ошибка загрузки данных. ' + args.get_message() + '\n' + args.get_stackTrace());
+    console.log('Error loading data from list. ' + args.get_message() + '\n' + args.get_stackTrace());
 }
