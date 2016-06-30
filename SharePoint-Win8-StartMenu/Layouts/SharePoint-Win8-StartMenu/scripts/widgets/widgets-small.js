@@ -23,8 +23,8 @@ Widgets.prototype.Initialization = function () {
             this.element
                 .addClass("widget")
                 .append("<a href=''>" + name + "</a>")
-                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SPMainApp/images/blogs_1.png' alt=''></a><a href='' style='font-size: 14pt;'>Маленькие праздники без повода</a><br/><a href='' style='font-size: 10pt;'>Пост для того, чтобы не забыть то, что мы тут только что обсуждали...</a></div>")
-                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SPMainApp/images/blogs_2.png' alt=''></a><a href='' style='font-size: 14pt;'>Нас ломанули?</a><br/><a href='' style='font-size: 10pt;'>'Если Вас съели - есть два выхода'</a></div>")
+                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SharePoint-Win8-StartMenu/images/blogs_1.png' alt=''></a><a href='' style='font-size: 14pt;'>Маленькие праздники без повода</a><br/><a href='' style='font-size: 10pt;'>Пост для того, чтобы не забыть то, что мы тут только что обсуждали...</a></div>")
+                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SharePoint-Win8-StartMenu/images/blogs_2.png' alt=''></a><a href='' style='font-size: 14pt;'>Нас ломанули?</a><br/><a href='' style='font-size: 10pt;'>'Если Вас съели - есть два выхода'</a></div>")
                 .click(function (e) {
                     alert("Calm down. Nothing to see here.");
                     e.preventDefault();
@@ -39,8 +39,8 @@ Widgets.prototype.Initialization = function () {
             this.element
                 .addClass("widget")
                 .append("<a href=''>" + name + "</a>")
-                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SPMainApp/images/blogs_1.png' alt=''></a><a href='' style='font-size: 14pt;'>Маленькие праздники без повода</a><br/><a href='' style='font-size: 10pt;'>Пост для того, чтобы не забыть то, что мы тут только что обсуждали...</a></div>")
-                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SPMainApp/images/blogs_2.png' alt=''></a><a href='' style='font-size: 14pt;'>Нас ломанули?</a><br/><a href='' style='font-size: 10pt;'>'Если Вас съели - есть два выхода'</a></div>")
+                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SharePoint-Win8-StartMenu/images/blogs_1.png' alt=''></a><a href='' style='font-size: 14pt;'>Маленькие праздники без повода</a><br/><a href='' style='font-size: 10pt;'>Пост для того, чтобы не забыть то, что мы тут только что обсуждали...</a></div>")
+                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SharePoint-Win8-StartMenu/images/blogs_2.png' alt=''></a><a href='' style='font-size: 14pt;'>Нас ломанули?</a><br/><a href='' style='font-size: 10pt;'>'Если Вас съели - есть два выхода'</a></div>")
                 .click(function () {
                    
                 });
@@ -55,8 +55,8 @@ Widgets.prototype.Initialization = function () {
             this.element
                 .addClass("widget")
                 .append("<a href=''>" + name + "</a>")
-                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SPMainApp/images/blogs_1.png' alt=''></a><a href='' style='font-size: 14pt;'>Маленькие праздники без повода</a><br/><a href='' style='font-size: 10pt;'>Пост для того, чтобы не забыть то, что мы тут только что обсуждали...</a></div>")
-                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SPMainApp/images/blogs_2.png' alt=''></a><a href='' style='font-size: 14pt;'>Нас ломанули?</a><br/><a href='' style='font-size: 10pt;'>'Если Вас съели - есть два выхода'</a></div>")
+                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SharePoint-Win8-StartMenu/images/blogs_1.png' alt=''></a><a href='' style='font-size: 14pt;'>Маленькие праздники без повода</a><br/><a href='' style='font-size: 10pt;'>Пост для того, чтобы не забыть то, что мы тут только что обсуждали...</a></div>")
+                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SharePoint-Win8-StartMenu/images/blogs_2.png' alt=''></a><a href='' style='font-size: 14pt;'>Нас ломанули?</a><br/><a href='' style='font-size: 10pt;'>'Если Вас съели - есть два выхода'</a></div>")
                 .click(function () {
 
                 });
@@ -70,7 +70,7 @@ Widgets.prototype.Initialization = function () {
             this.element
                 .addClass("widget")
                 .append("<a href=''>" + name + "</a>")
-                .append("<div style='height: 80px'><a href=''/'><img style='float:left;  top: 40px;' src='/_Layouts/15/SPMainApp/images/hooray.png' alt=''></a><a href='' style='position: absolute; left: 90px; top: 40px; font-size: 10pt;'>Спасибо за замечательные дайджествы новостей компании. Наконец-то в доступной форме мы узнаем, что творится в позитиве и за его пределеами.</a></div>")
+                .append("<div style='height: 80px'><a href=''/'><img style='float:left;  top: 40px;' src='/_Layouts/15/SharePoint-Win8-StartMenu/images/hooray.png' alt=''></a><a href='' style='position: absolute; left: 90px; top: 40px; font-size: 10pt;'>Спасибо за замечательные дайджествы новостей компании. Наконец-то в доступной форме мы узнаем, что творится в позитиве и за его пределеами.</a></div>")
                 .click(function (e) {
                     alert("Calm down. Nothing to see here.");
                     e.preventDefault();
@@ -145,8 +145,8 @@ Widgets.prototype.Initialization = function () {
             this.element
                 .addClass("widget")
                 .append("<a href=''>" + name + "</a>")
-                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SPMainApp/images/blogs_1.png' alt=''></a><a href='' style='font-size: 14pt;'>Маленькие праздники без повода</a><br/><a href='' style='font-size: 10pt;'>Пост для того, чтобы не забыть то, что мы тут только что обсуждали...</a></div>")
-                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SPMainApp/images/blogs_2.png' alt=''></a><a href='' style='font-size: 14pt;'>Нас ломанули?</a><br/><a href='' style='font-size: 10pt;'>'Если Вас съели - есть два выхода'</a></div>")
+                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SharePoint-Win8-StartMenu/images/blogs_1.png' alt=''></a><a href='' style='font-size: 14pt;'>Маленькие праздники без повода</a><br/><a href='' style='font-size: 10pt;'>Пост для того, чтобы не забыть то, что мы тут только что обсуждали...</a></div>")
+                .append("<div style='height: 80px'><a href=''/'><img style='float:left' src='/_Layouts/15/SharePoint-Win8-StartMenu/images/blogs_2.png' alt=''></a><a href='' style='font-size: 14pt;'>Нас ломанули?</a><br/><a href='' style='font-size: 10pt;'>'Если Вас съели - есть два выхода'</a></div>")
                 .click(function () {
 
                 });

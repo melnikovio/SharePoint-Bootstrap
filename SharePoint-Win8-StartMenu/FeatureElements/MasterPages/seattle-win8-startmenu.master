@@ -30,8 +30,17 @@
     
     
      <%--bootstrap--%>
-    <link href="/_Layouts/15/SharePoint-Win8-StartMenu/libs/bootstrap.3.3.6/content/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/_Layouts/15/SharePoint-Win8-StartMenu/libs/bootstrap/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="/_Layouts/15/SharePoint-Win8-StartMenu/styles/bootstrap3_sharepoint.css" rel="stylesheet" />
+    <link href="/_Layouts/15/SharePoint-Win8-StartMenu/styles/widgets.css" rel="stylesheet" />
+    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/libs/jquery/jquery-2.2.4.min.js"></script>
+    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/libs/jqueryui/scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/main.js"></script>
+    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/widgets/widgets-small.js"></script>
+    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/helpers/sharepoint-helper.js"></script>
+    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/widgets/wg_listitems.js"></script>
+    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/widgets/wg_exchangelist.js"></script>
+    <script src="/_Layouts/15/SharePoint-Win8-StartMenu/scripts/widgets/wg_reportslist.js"></script>
     <%--bootstrap--%>
     
 
@@ -353,7 +362,7 @@
 		<div id="s4-bodyContainer">
 		
             
-<div class="main" style="display:none">            
+<div class="main" >            
     <div class="container metro" style="width: 90% !important; background-color: #0071C6; ">
         <div class="row">
             <div class="col-md-6" style="padding-left: 5px; padding-right: 5px;">

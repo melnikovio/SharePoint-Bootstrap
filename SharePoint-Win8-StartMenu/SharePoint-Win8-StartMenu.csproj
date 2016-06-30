@@ -54,6 +54,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\Content\bootstrap-theme.css.map" />
+    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\Content\bootstrap-theme.min.css.map" />
+    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\Content\bootstrap.css.map" />
+    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\Content\bootstrap.min.css.map" />
     <None Include="FeatureElements\MasterPages\seattle-win8-startmenu.master" />
     <None Include="FeatureElements\MasterPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5892b70a-8503-4092-84df-29fd5a1ade09}</SharePointProjectItemId>
@@ -61,32 +65,67 @@
     <None Include="Features\Win8-StartMenu-Feature\Win8-StartMenu-Feature.feature">
       <FeatureId>{d10f4761-98a1-4759-aab2-6df05abe09a2}</FeatureId>
     </None>
+    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="key.snk" />
-    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\bootstrap.3.3.6.nupkg" />
-    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\Content\bootstrap-theme.css.map" />
-    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\Content\bootstrap-theme.min.css.map" />
-    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\Content\bootstrap.css.map" />
-    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\Content\bootstrap.min.css.map" />
-    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.eot" />
-    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.woff" />
-    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{dce54a0f-0570-4f58-ad1e-11a2af969e2e}</SharePointProjectItemId>
     </None>
+    <None Include="packages.config" />
     <None Include="Package\Package.package">
       <PackageId>{83672ca3-3557-4123-9143-7a44212f5186}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="Layouts\SharePoint-Win8-StartMenu\libs\jquery\jquery-2.2.4.min.map" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\accordion.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\all.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\autocomplete.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\base.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\button.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\core.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\datepicker.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\dialog.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\draggable.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\menu.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\progressbar.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\resizable.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\selectable.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\selectmenu.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\slider.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\sortable.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\spinner.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\tabs.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\theme.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\base\tooltip.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\Content\bootstrap-theme.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\Content\bootstrap-theme.min.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\Content\bootstrap.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\Content\bootstrap.min.css" />
     <Content Include="FeatureElements\MasterPages\Elements.xml" />
     <Content Include="Features\Win8-StartMenu-Feature\Win8-StartMenu-Feature.Template.xml">
       <DependentUpon>Win8-StartMenu-Feature.feature</DependentUpon>
     </Content>
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\images\blogs_1.png" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\images\blogs_2.png" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\images\blogs_3.png" />
@@ -417,37 +456,28 @@
     <Content Include="Layouts\SharePoint-Win8-StartMenu\images\officemap.png" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\images\structure.png" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\images\Windows_logo_-_2012.svg.png" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\Content\bootstrap-theme.css" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\Content\bootstrap-theme.min.css" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\Content\bootstrap.css" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\Content\bootstrap.min.css" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\Scripts\bootstrap.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap.3.3.6\content\Scripts\bootstrap.min.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\ai.0.15.0-build58334.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\ai.0.15.0-build58334.min.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\EmptyWidget.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\jquery-ui.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jquery\jquery-1.11.1.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jquery\metro\metro-bootstrap.min.css" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jquery\metro\metro.min.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\metro\metro-bootstrap.min.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\Content\themes\metro\metro.min.js" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jssor\jssor.js" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jssor\jssor.slider.min.js" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\require\require_2.1.15.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\sp_helper.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\widgets\wg_all.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\helpers\sharepoint-helper.js" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\widgets\wg_exchangelist.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\widgets\wg_helper.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\widgets\widgets-small.js" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\widgets\wg_listitems.js" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\widgets\wg_photos.js" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\widgets\wg_reportslist.js" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\widgets\wg_structure.js" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\main.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\onload.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\require_wg.js" />
-    <Content Include="Layouts\SharePoint-Win8-StartMenu\scripts\testshow.js" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\styles\bootstrap3_sharepoint.css" />
     <Content Include="Layouts\SharePoint-Win8-StartMenu\styles\widgets.css" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\Scripts\bootstrap.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\bootstrap\Scripts\bootstrap.min.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jquery\jquery-2.2.4.intellisense.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jquery\jquery-2.2.4.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jquery\jquery-2.2.4.min.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\scripts\jquery-ui-1.11.4.js" />
+    <Content Include="Layouts\SharePoint-Win8-StartMenu\libs\jqueryui\scripts\jquery-ui-1.11.4.min.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
